@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import {GlobalStyle, WrapperImages, Img} from './Galeria.style'
+import {GlobalStyle, WrapperImages, Img, H1} from './Galeria.style'
 import axios from 'axios';
 
 function App() {
@@ -54,7 +54,7 @@ const deleteImg = (id) => {
         dataLength={images.length}
         next={fetchImages}
         hasMore={hasMore}
-        loader={<h4>Cargando...</h4>}
+        loader={<H1>Loading...</H1>}
       >
         <WrapperImages>
           {images.map((image, index) => (

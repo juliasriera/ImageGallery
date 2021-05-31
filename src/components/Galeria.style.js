@@ -37,3 +37,10 @@ export const Img = styled.img`
 `;
 
 
+export const H1 = styled.div`
+max-width: 90%;
+font-size: 34px;
+text-align: center;
+`;
+
+
